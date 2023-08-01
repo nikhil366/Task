@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "7d565315-cdb3-4521-8767-e0896d9dd40a",
+		"name": "CrossK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23109738"
+	},
+	"item": [
+		{
+			"name": "Create item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand_name",
+							"value": "Levi's",
+							"type": "text"
+						},
+						{
+							"key": "fabric",
+							"value": "Cotton",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "fitting_type",
+							"value": "S",
+							"type": "text"
+						},
+						{
+							"key": "item_category",
+							"value": "64cc6255-5f89-4bb8-b44a-7654fdccd418",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/item/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"item",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Item List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand_name",
+							"value": "Levi's",
+							"type": "text"
+						},
+						{
+							"key": "fabric",
+							"value": "Cotton",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "fitting_type",
+							"value": "S",
+							"type": "text"
+						},
+						{
+							"key": "item_category",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/item/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"item",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/category/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Items Price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "select_item",
+							"value": "b5d87569-d655-46c4-b615-1302ee1b38a3",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "35.40",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/price/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"price",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "b5d87569-d655-46c4-b615-1302ee1b38a3",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "35.50",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Items Price List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "select_item",
+							"value": "b5d87569-d655-46c4-b615-1302ee1b38a3",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "35.40",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/price/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"price",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "b5d87569-d655-46c4-b615-1302ee1b38a3",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "35.50",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
